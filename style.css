@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 1%;
     padding: 0;
     font-family: 0;
     box-sizing: border-box;
@@ -11,7 +11,14 @@ body{
 }
 
 h1 {
-    margin: 2% 0px 1% 0px;
+    margin: 2% 2% 1% 1%;
+}
+
+h2 {
+    margin: 2% 2.5%;
+}
+p {
+    margin: 2% 0px;
 }
 
 h3 {
@@ -24,7 +31,7 @@ h3 {
     width: 100%;
     height: 100vh;
     background-image: url(images/cpu.png);
-    background-size: 50%;
+    background-size: 45%;
     background-repeat: no-repeat;
     background-position: right 5% bottom 25%;
 }
@@ -51,7 +58,7 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10% 20px;
+    margin: 10% 20px 10% 20px;
 }
 
 nav ul li a{
@@ -62,9 +69,90 @@ nav ul li a{
 
 
 #about{
-    border: 1px white dotted;
     width: 40%;
     padding: 1%;
     margin: 2% 0px;
     font-size: small;
 }
+
+
+
+section {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.service {
+    display: inline-block; /* Display services in a horizontal line */
+    margin-right: 5%; /* Adjust spacing between services */
+    vertical-align: top; /* Align services vertically at the top */
+}
+
+.service img {
+    width: 250px; /* Adjust image size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.service h3 {
+    margin-top: 10px;
+}
+
+.service p {
+    color: #666;
+}
+
+
+/*Email Contact Information */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    margin-top:1%;
+    border-radius: 2px;
+    padding: 1px;
+  }
+  
+  .column {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+    padding: 1%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
